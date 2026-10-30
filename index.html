@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAMSUNG STORE RYK — Mobile Store on Faisal Rd | Rahim Yar Khan</title>
+<meta name="description" content="SAMSUNG STORE RYK, a cell phone store on Faisal Rd, Rahim Yar Khan. Smartphones, tablets, wearables and accessories. Rated 4.3 stars on Google. Call +92 300 8677424.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#030712; --bg2:#060d1f; --samsung:#1428a0; --blue:#2f6bff; --cyan:#39c2ff; --violet:#7a5cff;
+  --ink:#eef3ff; --muted:#93a4c4; --glass:rgba(255,255,255,.055); --stroke:rgba(140,180,255,.22);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden;line-height:1.65}
+a{text-decoration:none;color:inherit}
+.grotesk{font-family:'Space Grotesk',sans-serif}
+
+/* animated gradient mesh */
+.mesh{position:fixed;inset:0;z-index:0;overflow:hidden;background:
+  radial-gradient(60% 50% at 15% 0%,rgba(20,40,160,.55),transparent 60%),
+  radial-gradient(50% 45% at 90% 10%,rgba(57,194,255,.22),transparent 60%),
+  radial-gradient(55% 60% at 50% 110%,rgba(122,92,255,.20),transparent 60%),var(--bg)}
+.mesh::after{content:"";position:absolute;inset:-40%;background:conic-gradient(from 0deg at 60% 40%,transparent 0deg,rgba(57,194,255,.06) 40deg,transparent 90deg,rgba(47,107,255,.05) 200deg,transparent 260deg);animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.grid-lines{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(120,160,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(120,160,255,.05) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(80% 60% at 50% 0%,#000 30%,transparent 100%)}
+main,footer,header{position:relative;z-index:2}
+
+/* header */
+header{display:flex;justify-content:space-between;align-items:center;padding:18px clamp(16px,4vw,52px);position:sticky;top:0;background:rgba(3,7,18,.72);backdrop-filter:blur(14px);border-bottom:1px solid rgba(140,180,255,.14);z-index:50}
+.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.25rem;letter-spacing:.12em}
+.logo .b{color:var(--cyan)}
+.logo small{display:block;font-family:'Manrope',sans-serif;font-weight:600;font-size:.62rem;letter-spacing:.34em;color:var(--muted)}
+nav.desk{display:flex;gap:28px;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+nav.desk a:hover{color:#fff}
+.hcall{background:linear-gradient(120deg,var(--samsung),var(--blue));color:#fff;padding:11px 22px;border-radius:999px;font-size:.8rem;font-weight:800;letter-spacing:.08em;box-shadow:0 8px 26px rgba(47,107,255,.4);transition:.3s}
+.hcall:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(47,107,255,.55)}
+@media(max-width:760px){nav.desk{display:none}}
+
+/* hero */
+.hero{padding:clamp(44px,7vw,84px) clamp(16px,4vw,52px) clamp(50px,7vw,80px);display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,60px);align-items:center;max-width:1280px;margin:auto}
+@media(max-width:880px){.hero{grid-template-columns:1fr}}
+.pill{display:inline-flex;gap:9px;align-items:center;border:1px solid var(--stroke);background:var(--glass);backdrop-filter:blur(8px);padding:8px 16px;border-radius:999px;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#cfe1ff}
+.pill .dot{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan);animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.7rem,6.4vw,4.9rem);line-height:1.02;font-weight:700;margin-top:24px}
+.hero h1 .grad{background:linear-gradient(92deg,#fff 10%,var(--cyan) 55%,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:1.06rem;margin-top:20px;max-width:520px;line-height:1.8}
+.hero p b{color:#fff}
+.hero-cta{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+.btn{padding:15px 30px;border-radius:999px;font-weight:800;font-size:.9rem;transition:.3s;display:inline-block}
+.btn-blue{background:linear-gradient(120deg,var(--samsung),var(--blue) 60%,var(--cyan));color:#fff;box-shadow:0 12px 34px rgba(47,107,255,.45)}
+.btn-blue:hover{transform:translateY(-3px)}
+.btn-glass{background:var(--glass);border:1px solid var(--stroke);color:#fff;backdrop-filter:blur(8px)}
+.btn-glass:hover{border-color:var(--cyan);color:var(--cyan)}
+.btn-wa{background:#1faa55;color:#fff;box-shadow:0 12px 30px rgba(31,170,85,.35)}
+.btn-wa:hover{transform:translateY(-3px)}
+.stats{display:flex;gap:clamp(18px,4vw,44px);margin-top:40px;flex-wrap:wrap}
+.stat b{font-family:'Space Grotesk',sans-serif;font-size:1.9rem;display:block;line-height:1;background:linear-gradient(90deg,#fff,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* CSS phone */
+.stage{display:flex;justify-content:center;position:relative}
+.phone{width:min(290px,74vw);aspect-ratio:9/18.6;background:linear-gradient(160deg,#1a2440,#05080f);border-radius:44px;border:1px solid rgba(160,200,255,.4);padding:12px;box-shadow:0 40px 90px rgba(20,40,160,.5),0 0 0 6px rgba(10,16,34,.9),0 0 90px rgba(57,194,255,.22);animation:floaty 6s ease-in-out infinite;position:relative;overflow:hidden}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-14px) rotate(-2deg)}}
+.screen{width:100%;height:100%;border-radius:34px;background:radial-gradient(120% 80% at 20% 0%,#2f6bff 0%,transparent 55%),radial-gradient(120% 90% at 90% 90%,#7a5cff 0%,transparent 50%),linear-gradient(170deg,#0a1a3f,#030712);position:relative;overflow:hidden;padding:26px 20px}
+.screen::after{content:"";position:absolute;top:-30%;left:-80%;width:55%;height:160%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.22),transparent);transform:rotate(8deg);animation:shine 4.6s ease-in-out infinite}
+@keyframes shine{0%,55%{left:-80%}85%,100%{left:150%}}
+.screen .tm{font-size:.68rem;letter-spacing:.3em;color:#bcd4ff;text-transform:uppercase;font-weight:700}
+.screen .big{font-family:'Space Grotesk',sans-serif;font-size:2rem;line-height:1.1;margin-top:12px;font-weight:700}
+.screen .ring{position:absolute;bottom:26px;left:20px;right:20px;display:flex;gap:8px}
+.screen .ring i{flex:1;height:8px;border-radius:99px;background:rgba(255,255,255,.16)}
+.screen .ring i:first-child{background:linear-gradient(90deg,var(--cyan),var(--violet))}
+.chip-f{position:absolute;background:rgba(8,14,30,.82);border:1px solid var(--stroke);backdrop-filter:blur(8px);border-radius:14px;padding:10px 15px;font-size:.76rem;font-weight:800;letter-spacing:.06em;box-shadow:0 16px 40px rgba(0,0,0,.45);animation:floaty 7s ease-in-out infinite}
+.chip-f.c1{top:12%;left:0;animation-delay:-2s}
+.chip-f.c2{bottom:16%;right:0;animation-delay:-4s}
+.chip-f em{font-style:normal;color:var(--cyan)}
+@media(max-width:880px){.chip-f.c1{left:2%}.chip-f.c2{right:2%}}
+
+/* category tiles */
+section{padding:clamp(50px,7vw,84px) clamp(16px,4vw,52px);max-width:1280px;margin:auto}
+.sec-head{max-width:640px;margin-bottom:40px}
+.sec-head .tag{font-size:.74rem;font-weight:800;letter-spacing:.32em;text-transform:uppercase;color:var(--cyan)}
+.sec-head h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,4.8vw,3.2rem);line-height:1.08;margin-top:14px}
+.sec-head p{color:var(--muted);margin-top:12px;line-height:1.75}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.tiles{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:540px){.tiles{grid-template-columns:1fr}}
+.tile{position:relative;background:var(--glass);border:1px solid var(--stroke);border-radius:22px;padding:30px 26px;backdrop-filter:blur(10px);overflow:hidden;transition:.35s;display:block}
+.tile::after{content:"";position:absolute;top:-40%;left:-90%;width:45%;height:180%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.14),transparent);transform:rotate(10deg);transition:left .7s ease}
+.tile:hover{transform:translateY(-6px);border-color:rgba(57,194,255,.6);box-shadow:0 24px 50px rgba(20,40,160,.45)}
+.tile:hover::after{left:140%}
+.tile .ic{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-size:1.5rem;background:linear-gradient(140deg,rgba(47,107,255,.35),rgba(57,194,255,.12));border:1px solid var(--stroke);margin-bottom:18px}
+.tile h3{font-family:'Space Grotesk',sans-serif;font-size:1.25rem}
+.tile p{color:var(--muted);font-size:.93rem;margin-top:8px;line-height:1.7}
+.tile .ask{margin-top:16px;display:inline-block;font-size:.74rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan)}
+
+/* support strip */
+.support{border:1px solid var(--stroke);border-radius:26px;background:linear-gradient(120deg,rgba(20,40,160,.35),rgba(57,194,255,.08));padding:clamp(28px,5vw,48px);display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:center}
+@media(max-width:800px){.support{grid-template-columns:1fr}}
+.support h3{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,3.4vw,2.1rem);line-height:1.15}
+.support p{color:var(--muted);margin-top:10px;line-height:1.75}
+.support .cta-col{display:flex;flex-direction:column;gap:12px}
+.support .cta-col a{text-align:center}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,56px);align-items:start}
+@media(max-width:840px){.visit{grid-template-columns:1fr}}
+.vcard{background:var(--glass);border:1px solid var(--stroke);border-radius:22px;padding:32px 28px;backdrop-filter:blur(10px)}
+.vcard .row{display:flex;gap:16px;padding:14px 0;border-bottom:1px dashed rgba(140,180,255,.25)}
+.vcard .row:last-child{border-bottom:none}
+.vcard b{color:var(--cyan);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;min-width:80px;padding-top:4px}
+.vcard span{line-height:1.65}
+
+footer{border-top:1px solid rgba(140,180,255,.14);padding:34px clamp(16px,4vw,52px) 108px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:.86rem;max-width:1280px;margin:auto}
+footer .fl{font-family:'Space Grotesk',sans-serif;color:#fff;letter-spacing:.12em;font-weight:700}
+footer .fl .b{color:var(--cyan)}
+.disc{width:100%;font-size:.76rem;opacity:.85}
+
+/* mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:none;gap:10px}
+.mbar a{flex:1;text-align:center;padding:14px;border-radius:999px;font-weight:800;font-size:.88rem}
+.mbar .c{background:linear-gradient(120deg,var(--samsung),var(--blue));color:#fff}
+.mbar .w{background:#1faa55;color:#fff}
+@media(max-width:760px){.mbar{display:flex}}
+</style>
+</head>
+<body>
+<div class="mesh"></div><div class="grid-lines"></div>
+
+<header>
+  <a class="logo" href="#top">SAMSUNG <span class="b">STORE</span> RYK<small>Cell Phone Store · Faisal Rd</small></a>
+  <nav class="desk">
+    <a href="#categories">Categories</a>
+    <a href="#support">Support</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <a class="hcall" href="tel:+923008677424">Call the Store</a>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div>
+      <span class="pill"><span class="dot"></span> Cell Phone Store · Rahim Yar Khan</span>
+      <h1>Next-gen mobile, <span class="grad">right on Faisal Road.</span></h1>
+      <p>SAMSUNG STORE RYK is a cell phone store on Faisal Rd in Rahim Yar Khan — for the latest smartphones, tablets, wearables and accessories, with a team in-store to help you choose. Rated <b>4.3 stars from 225 Google reviews</b>.</p>
+      <div class="hero-cta">
+        <a class="btn btn-blue" href="https://wa.me/923008677424" target="_blank" rel="noopener">Ask on WhatsApp</a>
+        <a class="btn btn-glass" href="#categories">Browse Categories</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>4.3 ★</b><span>Google rating</span></div>
+        <div class="stat"><b>225</b><span>Reviews</span></div>
+        <div class="stat"><b>6</b><span>Categories in-store</span></div>
+      </div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="phone"><div class="screen">
+        <div class="tm">Samsung Store · RYK</div>
+        <div class="big">Your next<br>upgrade<br>starts here.</div>
+        <div class="ring"><i></i><i></i><i></i></div>
+      </div></div>
+      <span class="chip-f c1">📱 <em>Smartphones</em></span>
+      <span class="chip-f c2">⌚ <em>Wearables</em> &amp; Audio</span>
+    </div>
+  </div>
+
+  <section id="categories" style="padding-top:10px">
+    <div class="sec-head">
+      <span class="tag">In-Store Categories</span>
+      <h2>Everything mobile, under one roof</h2>
+      <p>Explore the categories below — tap any tile to ask the store about current stock and prices on WhatsApp. Models and availability change, so a quick message before visiting is always worth it.</p>
+    </div>
+    <div class="tiles">
+      <a class="tile" href="https://wa.me/923008677424?text=I%20want%20to%20ask%20about%20Smartphones" target="_blank" rel="noopener"><span class="ic">📱</span><h3>Smartphones</h3><p>The latest Samsung mobile phones — from everyday essentials to flagship power.</p><span class="ask">Ask about stock →</span></a>
+      <a class="tile" href="https://wa.me/923008677424?text=I%20want%20to%20ask%20about%20Tablets" target="_blank" rel="noopener"><span class="ic">📲</span><h3>Tablets</h3><p>Big-screen tablets for study, work, streaming and the whole family.</p><span class="ask">Ask about stock →</span></a>
+      <a class="tile" href="https://wa.me/923008677424?text=I%20want%20to%20ask%20about%20Watches%20and%20Wearables" target="_blank" rel="noopener"><span class="ic">⌚</span><h3>Watches &amp; Wearables</h3><p>Smartwatches and wearables that pair with your phone for fitness and notifications.</p><span class="ask">Ask about stock →</span></a>
+      <a class="tile" href="https://wa.me/923008677424?text=I%20want%20to%20ask%20about%20Audio" target="_blank" rel="noopener"><span class="ic">🎧</span><h3>Audio</h3><p>Wireless earbuds and audio gear for music, calls and gaming.</p><span class="ask">Ask about stock →</span></a>
+      <a class="tile" href="https://wa.me/923008677424?text=I%20want%20to%20ask%20about%20Accessories" target="_blank" rel="noopener"><span class="ic">🔌</span><h3>Accessories</h3><p>Chargers, cables, covers, screen protectors and everyday mobile essentials.</p><span class="ask">Ask about stock →</span></a>
+      <a class="tile" href="https://wa.me/923008677424?text=I%20want%20to%20ask%20about%20Repairs%20and%20Support" target="_blank" rel="noopener"><span class="ic">🛠️</span><h3>Repairs &amp; Support</h3><p>Help with device issues, setup questions and after-sales support — ask in-store.</p><span class="ask">Ask about stock →</span></a>
+    </div>
+  </section>
+
+  <section id="support" style="padding-top:0">
+    <div class="support">
+      <div>
+        <h3>Not sure which phone fits your budget?</h3>
+        <p>Send the store a WhatsApp message with what you need — camera, battery, gaming or business use — and get pointed to the right category before you travel to Faisal Road.</p>
+      </div>
+      <div class="cta-col">
+        <a class="btn btn-wa" href="https://wa.me/923008677424" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <a class="btn btn-glass" href="tel:+923008677424">Call +92 300 8677424</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" style="padding-top:0">
+    <div class="visit">
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="tag">Visit the Store</span>
+        <h2>Find us on Faisal Road</h2>
+        <p>SAMSUNG STORE RYK is a Samsung mobile store listed under its own name on Faisal Rd, Rahim Yar Khan. Call ahead to check the device you want is in stock.</p>
+        <div class="hero-cta">
+          <a class="btn btn-blue" href="https://www.google.com/maps/search/?api=1&amp;query=SAMSUNG+STORE+RYK+Rahim+Yar+Khan" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+      </div>
+      <div class="vcard">
+        <div class="row"><b>Store</b><span>SAMSUNG STORE RYK — Cell phone store</span></div>
+        <div class="row"><b>Address</b><span>Faisal Rd, Rahim Yar Khan, 64200, Pakistan</span></div>
+        <div class="row"><b>Phone</b><span><a href="tel:+923008677424">+92 300 8677424</a></span></div>
+        <div class="row"><b>Rating</b><span>4.3 stars · 225 Google reviews</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="fl">SAMSUNG <span class="b">STORE</span> RYK</span>
+  <span>Faisal Rd · Rahim Yar Khan</span>
+  <span><a href="tel:+923008677424">+92 300 8677424</a></span>
+  <p class="disc">Sample website concept created for SAMSUNG STORE RYK. Details shown are from the business's public Google listing; please confirm services, prices and timings with the business. Samsung is a trademark of Samsung Electronics; this concept page is for the local store listed above and does not claim official Samsung affiliation beyond the store's own name.</p>
+</footer>
+
+<div class="mbar">
+  <a class="c" href="tel:+923008677424">Call Now</a>
+  <a class="w" href="https://wa.me/923008677424" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+</body>
+</html>
